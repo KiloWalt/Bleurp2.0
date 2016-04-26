@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="8" tilewidth="60" tileheight="60" nextobjectid="185">
+ <tileset firstgid="1" name="TileSer" tilewidth="60" tileheight="60" tilecount="49" columns="7">
+  <image source="Tiles.png" width="420" height="420"/>
+  <tile id="2">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tree" width="40" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi6QAmIlYkQGyigCcRaRIgNFDAAYkMixEbBKBiuAADf/gHz
+  </data>
+ </layer>
+ <layer name="Block" width="40" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhaQAmIlYkQGyigCcRaRIgNFDAAYkMixOgFmIGYBQ2zEqDZ0MzQBmIdINYFYj0s4no41BMjzgXE3EDMA8XcSDQ6G4Z5ifM6VYAgFvsJYR46ug9bWBFD0wsAAGTyBlI=
+  </data>
+ </layer>
+ <objectgroup name="objects" offsetx="0" offsety="60">
+  <object id="176" x="60" y="180" width="60" height="60">
+   <properties>
+    <property name="player" value=""/>
+   </properties>
+  </object>
+  <object id="177" x="2220" y="180" width="60" height="60">
+   <properties>
+    <property name="portal" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="20" tilewidth="60" tileheight="60" nextobjectid="30">
+ <tileset firstgid="1" name="TileSet" tilewidth="60" tileheight="60" tilecount="49" columns="7">
+  <image source="Tiles.png" width="420" height="420"/>
+  <tile id="2">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Block" width="50" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztlesKgCAMhYUuP0qfpMv7P15GBWM471MJPzhYUNs5NlKITodm1JpejWilNFdxmh9V20AmYnJsWrvWoXVm8IBnx3eFs6QYfJViBdeSqUeJvSmRowQ9R1v0HO3ypxyDCDtzTMAa33tULRe+/2z43O1vEc+s2eQ696ka0nDPBe6JV5/+Nu+4JhewF5XFJ4fLf63vkZIjdj9SMPUOnesWclw0OAmp
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="12" x="60" y="780" width="60" height="60">
+   <properties>
+    <property name="player" value=""/>
+   </properties>
+  </object>
+  <object id="13" x="540" y="780" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="14" x="1920" y="240" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="15" x="2280" y="780" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="17" x="1620" y="780" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="18" x="780" y="240" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="19" x="1320" y="360" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="20" x="60" y="300" width="60" height="60">
+   <properties>
+    <property name="portal" value=""/>
+   </properties>
+  </object>
+  <object id="21" x="2880" y="780" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="22" x="2820" y="540" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="23" x="2880" y="360" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="24" x="780" y="780" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="25" x="1920" y="780" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="26" x="2580" y="900" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="27" x="1680" y="360" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="28" x="1080" y="360" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+  <object id="29" x="480" y="360" width="60" height="60">
+   <properties>
+    <property name="tramp" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
