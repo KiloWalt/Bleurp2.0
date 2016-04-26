@@ -3,14 +3,22 @@
  <tileset firstgid="1" name="Tiles" tilewidth="60" tileheight="60" tilecount="49" columns="7">
   <image source="Tiles.png" width="420" height="420"/>
  </tileset>
- <layer name="Tile Layer 2" width="27" height="16">
+ <tileset firstgid="50" name="NewTiles" tilewidth="60" tileheight="60" tilecount="49" columns="7">
+  <image source="AlTiles.png" width="420" height="420"/>
+ </tileset>
+ <layer name="bg" width="27" height="16">
   <data encoding="base64" compression="zlib">
    eJwTY2BgEBvFo3gUj+JRPIqHGAYApFMlIQ==
   </data>
  </layer>
  <layer name="Tile Layer 1" width="27" height="16">
   <data encoding="base64" compression="zlib">
-   eJzFk90KgCAMhYW0C9MLoSfo56Ku6v1frg0UZAyNcnXg4DZ1XwNT6h9N4LlSSzl3ttSHagPvlVrKubOlPlQH+KzUUp7Xlxt9UB1Yg020brj2GQNjC3bgQWD1kWVjHLK9oTErCVmj0DyUFcieUzJame/wxRvPhe+CziXFsuq7uf5m4ZvUL22YPDCsliv9TyVZHBvjC8NbDXg=
+   eJxjYBgYEAzEIQTEYHxsavGZgw6igDiagBiMj00tPnPQQSIQJxEQg/GRxUOJMCcMiK2B2AaIbWlA20HtsYaynYDYGYhdaEC7Qu0C2eEFFaeVXTAAsiuQTnYhi/Mg+ZfaIIxMu2KAOBaI44A4nki7QOkigAS7Iog0FxtAT3vY7CLHD8TaBUqT4QT0haFhGMDl7wgcdoHSJCwPUjM/B2Cxi5uKNDcan5Z2odMwuwBvIjxC
+  </data>
+ </layer>
+ <layer name="grass" width="27" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlAITIDYFYjMa0OZIdsDYo2B4AuR0RGxcm9DOOWQBcvwwWAEt8vMooC4AAJE0C7Q=
   </data>
  </layer>
 </map>

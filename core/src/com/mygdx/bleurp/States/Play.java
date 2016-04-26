@@ -199,9 +199,9 @@ public class Play extends State{
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         cam.position.set(player.getX() + player.getWidth() / 2, player.getY() + player.getHeight() / 2, 0);
         cam.update();
-        renderer.setView(cam);
-        renderer.render();
         sb.begin();
+        pe.draw(sb);
+        player.draw(sb);
         exit.draw(sb);
         button1.draw(sb);
 
@@ -217,9 +217,9 @@ public class Play extends State{
         for (int i = 0; i < tramps.size; i++) {
             tramps.get(i).draw(sb);
         }
-        pe.draw(sb);
-        player.draw(sb);
         sb.end();
+        renderer.setView(cam);
+        renderer.render();
         sb.setProjectionMatrix(cam.combined);
         sr.setProjectionMatrix(cam.combined);
 
@@ -237,7 +237,7 @@ public class Play extends State{
         playerRect.setPosition(player.getX(),player.getY());
         Rectangle portalRect = new Rectangle(exit.getX(),exit.getY(),exit.getWidth(),exit.getHeight());
         if(playerRect.overlaps(portalRect)){
-            for(int i = 1; i < 7; i ++){
+            for(int i = 1; i < 6; i ++){
                 String level = "level" + String.valueOf(i);
                 if(String.valueOf(currentLevel).equals(level)){
                     prefs.putBoolean("level" + String.valueOf(i + 1), true);
@@ -282,7 +282,7 @@ public class Play extends State{
         for(int i = 0; i < tramps.size; i++){
             Trampoline tramp = tramps.get(i);
             playerRect.setPosition(player.getX(),player.getY());
-            Rectangle trampRect = new Rectangle(tramp.getX(),tramp.getY() + tramp.getHeight(),60,10);
+            Rectangle trampRect = new Rectangle(tramp.getX(),tramp.getY(),60,30);
             if(playerRect.overlaps(trampRect)){
                 player.setVelocity((new Vector2(player.getVelocity().x,150 / 1.8f)));
                 player.jump.play();
