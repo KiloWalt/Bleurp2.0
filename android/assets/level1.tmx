@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="20" tilewidth="60" tileheight="60" nextobjectid="9">
  <tileset firstgid="1" name="Tileset" tilewidth="60" tileheight="60" tilecount="49" columns="7">
-  <image source="../../Documents/Coding/Java/Bleurp2.0/Bleurp2.0/android/assets/AlTiles.png" width="420" height="420"/>
+  <image source="AlTiles.png" width="420" height="420"/>
   <tile id="9">
    <properties>
     <property name="blocked" value=""/>
@@ -94,7 +94,7 @@
   </tile>
  </tileset>
  <tileset firstgid="50" name="Tiles2" tilewidth="60" tileheight="60" tilecount="36" columns="6">
-  <image source="../../Documents/Coding/Java/Bleurp2.0/Bleurp2.0/android/assets/Tiles2.png" width="360" height="360"/>
+  <image source="Tiles2.png" width="360" height="360"/>
  </tileset>
  <objectgroup name="objects">
   <object id="6" x="240" y="720" width="60" height="60">
