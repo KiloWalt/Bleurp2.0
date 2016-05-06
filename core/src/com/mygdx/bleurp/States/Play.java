@@ -5,6 +5,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Cursor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -203,7 +204,7 @@ public class Play extends State{
         pe.draw(sb);
         player.draw(sb);
         exit.draw(sb);
-        button1.draw(sb);
+
 
         //Spikes
         /*for(int i = 0; i < spikes.size; i++){
@@ -217,9 +218,12 @@ public class Play extends State{
         for (int i = 0; i < tramps.size; i++) {
             tramps.get(i).draw(sb);
         }
+        button1.draw(sb);
         sb.end();
         renderer.setView(cam);
         renderer.render();
+
+
         sb.setProjectionMatrix(cam.combined);
         sr.setProjectionMatrix(cam.combined);
 
@@ -237,7 +241,7 @@ public class Play extends State{
         playerRect.setPosition(player.getX(),player.getY());
         Rectangle portalRect = new Rectangle(exit.getX(),exit.getY(),exit.getWidth(),exit.getHeight());
         if(playerRect.overlaps(portalRect)){
-            for(int i = 1; i < 6; i ++){
+            for(int i = 1; i < 7; i ++){
                 String level = "level" + String.valueOf(i);
                 if(String.valueOf(currentLevel).equals(level)){
                     prefs.putBoolean("level" + String.valueOf(i + 1), true);
@@ -255,10 +259,10 @@ public class Play extends State{
             Rectangle boulderRect = new Rectangle(b.getX(),b.getY(),b.getWidth(),b.getHeight());
             if(playerRect.overlaps(boulderRect)){
                 player.setY(player.oldY);
+                player.fallTimer = 0;
                 if(b.getVelocity().x < player.getVelocity().x){
                     player.setVelocity(new Vector2(70,70 / 1.8f));
                     b.setVelocity(new Vector2(player.getVelocity().x,b.getVelocity().y));
-
                 }
                 if(b.getVelocity().x > player.getVelocity().x){
                     player.setVelocity(new Vector2(-60,70 / 1.8f));
@@ -273,6 +277,13 @@ public class Play extends State{
             if(playerRect.overlaps(spikeRect)){
                 gsm.set(new Play(gsm));
                 dispose();
+            }
+            for(int z = 0; z < boulders.size; z++){
+                Rectangle boulderRect = new Rectangle(boulders.get(z).getX(),boulders.get(z).getY(),
+                        boulders.get(z).getWidth(),boulders.get(z).getHeight());
+                if(boulderRect.overlaps(spikeRect)){
+                    spikes.removeValue(s,true);
+                }
             }
         }
 

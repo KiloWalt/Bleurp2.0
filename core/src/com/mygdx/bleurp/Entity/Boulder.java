@@ -66,6 +66,12 @@ public class Boulder extends Sprite {
             setY(oldY);
             velocity.y = 0;
         }
+
+        if(velocity.x > 0){
+            velocity.x--;
+        }else if(velocity.x < 0){
+            velocity.x++;
+        }
     }
 
     public void setVelocity(Vector2 velocity) {

@@ -39,6 +39,7 @@ public class pauseState extends State{
     public pauseState(GSM gsm) {
         super(gsm);
         prefs = Gdx.app.getPreferences("My Preferences");
+        cam.setToOrtho(false, Bleurp.WIDTH,Bleurp.HEIGHT);
         stage = new Stage();
         vp = new FitViewport(Bleurp.WIDTH,Bleurp.HEIGHT,cam);
         stage = new Stage(vp,sb);
@@ -75,6 +76,8 @@ public class pauseState extends State{
 
     @Override
     public void render(SpriteBatch sb) {
+        Gdx.gl.glClearColor(0, 255f, 255f, 0);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         sb.setProjectionMatrix(cam.combined);
         sb.begin();
         //sb.draw(texture,0,0,800,480);
