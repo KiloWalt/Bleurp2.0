@@ -97,14 +97,14 @@ public class levelSelect extends State{
         updateButton("level8", 7);
         updateButton("level9", 8);
         updateButton("level10", 9);
-        updateButton("level11", 10);
-        updateButton("level12", 11);
-        updateButton("level13", 12);
-        updateButton("level14", 13);
-        updateButton("level15", 14);
-        updateButton("level16", 15);
-        updateButton("level17", 16);
-        updateButton("level18", 17);
+        updateButton2("level11", 10);
+        updateButton2("level12", 11);
+        updateButton2("level13", 12);
+        updateButton2("level14", 13);
+        updateButton2("level15", 14);
+        updateButton2("level16", 15);
+        updateButton2("level17", 16);
+        updateButton2("level18", 17);
         if(Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)){
             gsm.set(new MenuState(gsm));
         }
@@ -191,4 +191,15 @@ public class levelSelect extends State{
             }
         }
     }
+    public void updateButton2(String bool,int number){
+        if(prefs.getBoolean(bool)){
+            prefs.flush();
+            if(buttons.get(number).isPressed()){
+                prefs.putString("currentLevel", bool);
+                prefs.flush();
+                gsm.set(new Play2(gsm));
+            }
+        }
+    }
+
 }
