@@ -245,7 +245,7 @@ public class Player extends Sprite implements GestureDetector.GestureListener{
         if (deltaY > 0) {
             if (deltaY > deltaX) {
                 if (deltaY > deltaX * -1) {
-
+                    velocity.x = 0;
                 }
 
             }
